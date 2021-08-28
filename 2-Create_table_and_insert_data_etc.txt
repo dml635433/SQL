@@ -1,0 +1,61 @@
+|=================================Create table=================================|
+
+create table cust
+(
+id int(200),
+name varchar(200),
+city varchar(200),
+address varchar(200),
+pincode varchar(200),
+mobile int(20)
+);
+
+|=================================create table=================================|
+
+create table product (
+    id int(10),
+    name varchar(200),
+    city varchar(200),
+    quantity varchar(10),
+    quality varchar(200),
+    price varchar(200),
+    p_GST varchar(200),
+    state varchar(200)
+);
+
+
+|=================================insert data in table=================================|
+
+insert into cust(id,name,city,address,pincode,mobile) values
+(105,"Hariom","Etawah","Bagiya Adda",206444,8965874869);
+
+insert into cust(id,name,city,address,pincode,mobile)
+values
+(106,"Monu","Banglore","Etawah",208001,5968748695),
+(107,"Yogesh","champatpur","Etawah",206244,7984869586),
+(108,"Ramchandra","Kota","Kota",206001,8965987486),
+(109,"Manglesh","Bah","Agra",206422,7485963215),
+(110,"Hariom","Agra","Agra",394210,4859687486),
+(111,"Jeetu","Kota","Kota",394210,7896547896);
+
+|=================================insert data in table=================================|
+
+insert into product (id,name,city,quantity,quality,price,p_GST,state)
+values
+(11, "Dell" , "surat" , "10" , "2" , "40000" , "20%" , "Gujarat");
+(12, "Lenvo" , "vadodara" , "50" , "1" , "350000" , "10%" , "UtterPredesh");
+(13, "Accer" , "vadodara" , "60" , "3" , "60000" , "40%" , "UtterPardesh");
+(14, "Realme" , "surat" , "20" , "3" , "70000" , "35%" , "Rajsthan"),
+(15, "Dell" , "kanpur" , "35" , "2" , "60000" , "15%" , "Rajsthan");
+(16, "Hundai" , "Agra" , "40" , "2" , "65000" , "10%" , "Karnataka"),
+(17, "Mac" , "etawah" , "90" , "1" , "50000" , "25%" , "Karnataka"),
+(18, "Apple" , "etawah" , "100" , "1" , "25000" , "10%" , "Chhenni"),
+(19, "Samsung" , "vapi" , "65" , "4" , "48000" , "25%" , "MadhyPredesh"),
+(20, "Mi" , "valsad" , "25" , "3" , "50000" , "30%" , "MadhyPredesh"),
+(21, "Vivo" , "mumbai" , "99" , "4" , "50000" , "50%" , "Gujarat"),
+(22, "Oppo" , "surat" , "100" , "2" , "30000" , "30%" , "Gujarat");
+
+
+|=================================Distinct=================================|
+
+select distinct city from cust;

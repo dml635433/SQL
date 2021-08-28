@@ -1,0 +1,29 @@
+connect mysql to cmd : 
+
+cd../..
+
+cd xampp\mysql\bin
+
+mysql -u  root -p 
+
+
+|====================================Show Databases==============================|
+
+show databases;
+
+|====================================Select your database==============================|
+
+use jio;
+
+|=====================================Show Tables==============================|
+
+show tables;
+
+|====================================show tables data==============================|
+
+select * from table_name;
+
+|====================================describe your table==============================|
+
+desc table_name;
+

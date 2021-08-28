@@ -1,0 +1,52 @@
+|=====================================where clause======================================|
+find out the value where : 
+
+	select * from table_name where name = "mohan";
+
+you can use operator also :
+
+|=====================================And, OR , NOT======================================| 
+
+AND : All condition is True
+OR    :  Any one condition is true 
+NOT : Display Record condition is not True : T ===> F 
+
+Example of AND : 
+
+	select * from cust where name = "mohan" and city = "surat"
+
+Example of OR : 
+
+	select * from cust where name = "Ram" or city = "surat";
+
+Example of NOT : 
+
+	select * from emp where not emp_name = "jitu";
+
+|=====================================Order By======================================|
+
+order by :  sort the result ascending or descending order by default ascending order
+DESC : using descending order this keyword
+
+Example of order by :
+
+	select * from cust order by city;
+
+Example of descending order :
+
+	select * from cust order by city desc;
+
+|=====================================IS Null , NOT Null====================================|
+
+IS NULL  :  find out the null values in columns.
+Not Null :  Not show null values in columns. 
+
+Example of IS NULL : 
+
+	select name , city , address from cust where city is null;
+
+Example of IS NOT NULL :
+
+	select  name , city from cust where city is not null ;
+
+

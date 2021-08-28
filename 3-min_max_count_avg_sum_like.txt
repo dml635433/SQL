@@ -1,0 +1,52 @@
+|========================================MIN() , MAX()====================================|
+
+MIN()  : return a smallest value in a column.
+MAX() : return a largest value in a column.
+
+Example of MIN() : 
+
+	select min(price) from cust;
+
+Example of MAX() : 
+
+	select max(price) from cust;
+
+
+|=====================================COUNT(), AVG(), SUM()=================================|
+
+Count() : find out the number of product
+AVG()    : find the Avg value of a column.
+Sum()    : sum of query field.
+
+Example of Count() : 
+
+	select count(product_id) from emp;
+
+Example of AVG() :
+
+	select avg(price) from emp;
+
+Example of Sum() : 
+
+	select sum(product_id) from emp;
+
+
+
+|===========================================LIKE=======================================|
+
+LIKE Operator			Description
+
+WHERE CustomerName LIKE 'a%'	Finds any values that start with "a"
+WHERE CustomerName LIKE '%a'	Finds any values that end with "a"
+WHERE CustomerName LIKE '%or%'	Finds any values that have "or" in any position
+WHERE CustomerName LIKE '_r%'	Finds any values that have "r" in the second position
+WHERE CustomerName LIKE 'a_%'	Finds any values that start with "a" and are at least 2 characters in length
+WHERE CustomerName LIKE 'a__%'	Finds any values that start with "a" and are at least 3 characters in length
+WHERE ContactName LIKE 'a%o'	Finds any values that start with "a" and ends with "o"
+
+
+Example of LIKE : 
+
+	select * from customer where cust_name like "s%" ; 
+
+Same as u can use table and apply.

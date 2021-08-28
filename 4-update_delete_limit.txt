@@ -1,0 +1,40 @@
+|====================================update===================================|
+
+Update : modify the record existing table. or change record.
+
+Example of Update : 
+
+	update table_name set column_name1 = old_value, column_name1= new_value where id = 101;	
+	update emp set emp_name = "jitu" , emp_name = "jitendra kumar" where emp_id = 101; 
+
+
+NOTE : you can give direct value 
+
+	update table_name set column_name = "Jitu bhai", city="surat" where id = 101;
+
+Note : if you can not give where condition then update all record.
+
+
+|====================================Delete===================================|
+
+Delete : delete existing record in table. or delete the record.
+
+	delete from table_name where id = 101;
+	delete from tabel_name where name = "mohan";
+
+Delete All Record in a table : 
+
+	delete from table_name;
+
+
+|====================================LIMIT===================================|
+
+Limit : using this limit keyword so record on your condition base see the example :
+
+Example of Limit : 
+
+	select * from cust limit 5;
+	
+	select * from cust where city  limit 5;
+
+only five record shows..
